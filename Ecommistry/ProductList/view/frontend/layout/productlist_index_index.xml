@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Customer Product list.
+ *
+ * @category  Ecommistry
+ * @package   Ecommistry_ProductList
+ * @author    Sumil
+ * 
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+	<head>
+        <title>Customer Product Listing</title>
+        <css src="Ecommistry_ProductList::css/product-item.css"/>
+        <css src="Ecommistry_ProductList::css/owl.carousel.min.css"/>    
+    </head> 
+   <update handle="customer_account"/>
+  <body>
+  		<referenceBlock name="page.main.title">
+            <action method="setPageTitle">
+                <argument translate="true" name="title" xsi:type="string">Product List</argument>
+            </action>
+        </referenceBlock>
+        <referenceContainer name="content">
+        	<block class="Ecommistry\ProductList\Block\Index\Index" name="custom.products.list" as="product_list" template="Ecommistry_ProductList::productlist_index_index.phtml"></block>
+        </referenceContainer>
+    </body>
+</page>

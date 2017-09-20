@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Customer Product list.
+ *
+ * @category  Ecommistry
+ * @package   Ecommistry_ProductList
+ * @author    Sumil
+ * 
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="customer_account_navigation">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="customer-productlist" after="-">
+                <arguments>
+                    <argument name="path" xsi:type="string">productlist/index/index</argument>
+                    <argument name="label" xsi:type="string">Product List</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

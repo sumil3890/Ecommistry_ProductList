@@ -1,0 +1,21 @@
+{
+    "name": "ecommistry/module-productlist",
+    "description": "",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "sumil",
+            "email": "sumilsanghavi@yahoo.in"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Ecommistry\\ProductList\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
